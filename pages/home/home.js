@@ -14,7 +14,8 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-      slideList: homeData.slideList
+      slideList: homeData.slideList,
+      typeList: homeData.typeList
     })
   },
 

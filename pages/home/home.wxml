@@ -6,4 +6,12 @@
       </swiper-item>
     </block>
   </swiper>
+  <view class="type-list">
+    <block wx:for="{{typeList}}" wx:key="{{index}}">
+      <view class="type-list-item">
+        <image src="{{item.imageSrc}}"></image>
+        <text>{{item.name}}</text>
+      </view>
+    </block>
+  </view>
 </view>
