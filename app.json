@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/products/products",
+    "pages/shoppingcar/shoppingcar",
+    "pages/mycenter/mycenter",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "荣和共兴商城",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/tab/home_pr@2x.png",
+        "selectedIconPath": "images/tab/home_pr@2x.png"
+      },
+      {
+        "pagePath": "pages/products/products",
+        "text": "商城",
+        "iconPath": "images/tab/products_pr@2x.png",
+        "selectedIconPath": "images/tab/products_pr@2x.png"
+      },
+      {
+        "pagePath": "pages/shoppingcar/shoppingcar",
+        "text": "购物车",
+        "iconPath": "images/tab/shoppingcar_pr@2x.png",
+        "selectedIconPath": "images/tab/shoppingcar_pr@2x.png"
+      },
+      {
+        "pagePath": "pages/mycenter/mycenter",
+        "text": "个人中心",
+        "iconPath": "images/tab/mycenter_pr@2x.png",
+        "selectedIconPath": "images/tab/mycenter_pr@2x.png"
+      }
+    ]
+  }
+}
