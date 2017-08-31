@@ -1,7 +1,7 @@
 const slideList = [
   { src: '/images/home/banner@homepage.png' },
-  { src: '/images/home/banner@homepage.png' },
-  { src: '/images/home/banner@homepage.png' }
+  { src: '/images/home/banner@homepage2.png' },
+  { src: '/images/home/banner@homepage3.png' }
 ]
 
 const typeList = [
@@ -11,7 +11,95 @@ const typeList = [
   { imageSrc: '/images/home/servise_support@2x.png', name: '服务支持' }
 ]
 
+const projectList = [
+  {
+    imageSrc: '/images/home/category-software_develope@2x.png',
+    items: [
+      {
+        imageSrc: '/images/home/image_product_homepage.png',
+        name: '荣和共兴-云ERP系统，进销存系统，企业、网店均适用',
+        marketPrice: 9800,
+        activityPrice: 8000,
+        favorQuantity: 251,
+        saleQuantity: 288
+      },
+      {
+        imageSrc: '/images/home/image_product_homepage.png',
+        name: '荣和共兴-云ERP系统，进销存系统，企业、网店均适用',
+        marketPrice: 9800,
+        activityPrice: 8000,
+        favorQuantity: 251,
+        saleQuantity: 288
+      }
+    ]
+  },
+  {
+    imageSrc: '/images/home/category-programe_manage@2x.png',
+    items: [
+      {
+        imageSrc: '/images/home/image_product_homepage.png',
+        name: '荣和共兴-云ERP系统，进销存系统，企业、网店均适用',
+        marketPrice: 9800,
+        activityPrice: 8000,
+        favorQuantity: 251,
+        saleQuantity: 288
+      },
+      {
+        imageSrc: '/images/home/image_product_homepage.png',
+        name: '荣和共兴-云ERP系统，进销存系统，企业、网店均适用',
+        marketPrice: 9800,
+        activityPrice: 8000,
+        favorQuantity: 251,
+        saleQuantity: 288
+      }
+    ]
+  },
+  {
+    imageSrc: '/images/home/category-ITsysterm_mangage@2x.png',
+    items: [
+      {
+        imageSrc: '/images/home/image_product_homepage.png',
+        name: '荣和共兴-云ERP系统，进销存系统，企业、网店均适用',
+        marketPrice: 9800,
+        activityPrice: 8000,
+        favorQuantity: 251,
+        saleQuantity: 288
+      },
+      {
+        imageSrc: '/images/home/image_product_homepage.png',
+        name: '荣和共兴-云ERP系统，进销存系统，企业、网店均适用',
+        marketPrice: 9800,
+        activityPrice: 8000,
+        favorQuantity: 251,
+        saleQuantity: 288
+      }
+    ]
+  },
+  {
+    imageSrc: '/images/home/category-servise_support@2x.png',
+    items: [
+      {
+        imageSrc: '/images/home/image_product_homepage.png',
+        name: '荣和共兴-云ERP系统，进销存系统，企业、网店均适用',
+        marketPrice: 9800,
+        activityPrice: 8000,
+        favorQuantity: 251,
+        saleQuantity: 288
+      },
+      {
+        imageSrc: '/images/home/image_product_homepage.png',
+        name: '荣和共兴-云ERP系统，进销存系统，企业、网店均适用',
+        marketPrice: 9800,
+        activityPrice: 8000,
+        favorQuantity: 251,
+        saleQuantity: 288
+      }
+    ]
+  }
+]
+
 module.exports = {
   slideList: slideList,
-  typeList: typeList
+  typeList: typeList,
+  projectList: projectList
 }

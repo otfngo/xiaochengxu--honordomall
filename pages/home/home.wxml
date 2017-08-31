@@ -1,17 +1,45 @@
 <view>
-  <swiper indicator-dots="{{true}}" autoplay="{{true}}">
-    <block wx:for="{{slideList}}" wx:key="{{index}}">
-      <swiper-item>
-        <image src="{{item.src}}"></image>
-      </swiper-item>
-    </block>
+  <swiper indicator-dots="{{true}}" autoplay="{{true}}" circular="{{true}}">
+    <swiper-item wx:for="{{slideList}}" wx:key="index">
+      <image src="{{item.src}}"></image>
+    </swiper-item>
   </swiper>
   <view class="type-list">
-    <block wx:for="{{typeList}}" wx:key="{{index}}">
-      <view class="type-list-item">
-        <image src="{{item.imageSrc}}"></image>
-        <text>{{item.name}}</text>
+    <view class="type-list-item" wx:for="{{typeList}}" wx:key="index">
+      <image src="{{item.imageSrc}}"></image>
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+  <view class="project-list">
+    <view class="project-list-group" wx:for="{{projectList}}" wx:for-item="projectItem" wx:for-index="projectIndex" wx:key="projectIndex">
+      <image class="group-img" src="{{projectItem.imageSrc}}"></image>
+      <view class="project-list-item" wx:for="{{projectItem.items}}" wx:key="index">
+        <image class="item-img" src="{{item.imageSrc}}"></image>
+        <view class="item-text">
+          <text class="name">{{item.name}}</text>
+          <view class="price-wrapper">
+            <view class="price">
+              <text class="price-name">市场价：</text>
+              <text class="market-price">{{item.marketPrice}}</text>
+            </view>
+            <view class="price">
+              <text class="price-name">活动价：</text>
+              <text class="activity-price">{{item.activityPrice}}</text>
+            </view>
+          </view>
+          <view class="desc">
+            <view class="favor">
+              <text class="value">{{item.favorQuantity}}</text>
+              <text class="text">点赞数</text>
+            </view>
+            <view class="sale">
+              <text class="value">{{item.saleQuantity}}</text>
+              <text class="text">总销量</text>
+            </view>
+            <image class="like-img" src="/images/home/add-like@common.png"></image>
+          </view>
+        </view>
       </view>
-    </block>
+    </view>
   </view>
 </view>

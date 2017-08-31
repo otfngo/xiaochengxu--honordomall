@@ -1,7 +1,27 @@
+/* reset */
+
+page {
+  background-color: #f8f8f8;
+  height: 100%;
+  font-size: 0;
+  line-height: 1.2;
+}
+
+checkbox, radio {
+  margin-right: 10rpx;
+}
+
+button {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+form {
+  width: 100%;
+}
+
 text {
   font-family: MicroSoft Yahei;
-  font-size: 24rpx;
-  color: #666;
 }
 
 input {
