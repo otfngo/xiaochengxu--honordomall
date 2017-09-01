@@ -1,0 +1,29 @@
+<template name="productItem">
+  <view class="product-item">
+    <image class="item-img" src="{{imageSrc}}"></image>
+    <view class="item-text">
+      <text class="name">{{name}}</text>
+      <view class="price-wrapper">
+        <view class="price">
+          <text class="price-name">市场价：</text>
+          <text class="market-price">{{marketPrice}}</text>
+        </view>
+        <view class="price">
+          <text class="price-name">活动价：</text>
+          <text class="activity-price">{{activityPrice}}</text>
+        </view>
+      </view>
+      <view class="desc">
+        <view class="favor">
+          <text class="value">{{favorQuantity}}</text>
+          <text class="text">点赞数</text>
+        </view>
+        <view class="sale">
+          <text class="value">{{saleQuantity}}</text>
+          <text class="text">总销量</text>
+        </view>
+        <image class="like-img" src="/images/add-like@common.png"></image>
+      </view>
+    </view>
+  </view>
+</template>

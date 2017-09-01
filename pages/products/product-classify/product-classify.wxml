@@ -1,0 +1,14 @@
+<view class="product-classify">
+    <view class="product-title" catchtap="onProductClassifyTap">
+        <text>全部商品</text>
+    </view>
+    <view class="product-classify-group" wx:for="{{productClassifyList}}" wx:for-item="productClassifyItem" wx:for-index="productClassifyIndex" wx:key="productClassifyIndex">
+        <view class="product-classify-list"  catchtap="onProductClassifyTap">
+            <text>{{productClassifyItem.classifyName}}</text>
+            <image src="/images/products/go_adressdetails@2x.png"></image>
+        </view>
+        <view class="product-classify-list-item" wx:for="{{productClassifyItem.items}}" wx:key="index"  catchtap="onProductClassifyTap">
+            <text>{{item.name}}</text>
+        </view>
+    </view>
+</view>

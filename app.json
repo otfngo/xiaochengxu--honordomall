@@ -1,11 +1,12 @@
 {
   "pages": [
-    "pages/home/home",
     "pages/products/products",
+    "pages/home/home",
     "pages/shoppingcar/shoppingcar",
     "pages/mycenter/mycenter",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/products/product-classify/product-classify"
   ],
   "window": {
     "backgroundTextStyle": "light",

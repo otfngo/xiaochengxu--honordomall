@@ -16,7 +16,7 @@ Page({
     this.setData({
       slideList: homeData.slideList,
       typeList: homeData.typeList,
-      projectList: homeData.projectList
+      productList: homeData.productList
     })
   },
 

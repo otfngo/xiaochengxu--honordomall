@@ -1,4 +1,4 @@
-let productsData = require('../../data/products.js')
+let productsData = require('../../../data/products.js')
 
 Page({
 
@@ -6,9 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    classifyWrapperShow: true,
-    productsContainerShow: true,
-    searchPanelShow: false
+
   },
 
   /**
@@ -16,29 +14,13 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-      productList: productsData.productList
+      productClassifyList: productsData.productClassifyList
     })
   },
 
-  onClassifyTap: function () {
-    wx.navigateTo({
-      url: 'product-classify/product-classify'
-    })
-  },
-
-  onBindFocus: function () {
-    this.setData({
-      classifyWrapperShow: false,
-      productsContainerShow: false,
-      searchPanelShow: true
-    })
-  },
-
-  onCancelTap: function () {
-    this.setData({
-      classifyWrapperShow: true,
-      productsContainerShow: true,
-      searchPanelShow: false
+  onProductClassifyTap: function (event) {
+    wx.navigateBack({
+      delta: 1
     })
   },
 

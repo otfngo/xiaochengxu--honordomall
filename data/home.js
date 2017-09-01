@@ -11,7 +11,7 @@ const typeList = [
   { imageSrc: '/images/home/servise_support@2x.png', name: '服务支持' }
 ]
 
-const projectList = [
+const productList = [
   {
     imageSrc: '/images/home/category-software_develope@2x.png',
     items: [
@@ -101,5 +101,5 @@ const projectList = [
 module.exports = {
   slideList: slideList,
   typeList: typeList,
-  projectList: projectList
+  productList: productList
 }

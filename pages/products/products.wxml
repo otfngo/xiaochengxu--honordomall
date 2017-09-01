@@ -1,2 +1,28 @@
-<!--products.wxml-->
-<text>products.wxml</text>
+<import src="product-item/product-item-template.wxml"></import>
+
+<view class="product">
+    <view class="product-header">
+        <view wx:if="{{classifyWrapperShow}}" catchtap="onClassifyTap" class="product-classify-wrapper">
+            <image src="/images/products/classify_product_center.png"></image>
+            <text>分类</text>
+        </view>
+        <view class="product-search">
+            <icon type="search" size="16" color="#6c6c6c" class="search" />
+            <input placeholder="搜索店内商品" bindfocus="onBindFocus" />
+            <text class="cancel" wx:if="{{searchPanelShow}}" catchtap="onCancelTap">取消</text>
+        </view>
+    </view>
+    <block wx:if="{{productsContainerShow}}">
+        <view class="product-title">
+            <text class="active">综合</text>
+            <text>销量</text>
+            <text>新品</text>
+            <text>价格</text>
+        </view>
+        <view class="product-content">
+            <block wx:for="{{productList}}" wx:key="index">
+                <template is="productItem" data="{{...item}}"></template>
+            </block>
+        </view>
+    </block>
+</view>
