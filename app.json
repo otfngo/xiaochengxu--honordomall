@@ -23,26 +23,26 @@
       {
         "pagePath": "pages/home/home",
         "text": "首页",
-        "iconPath": "images/tab/home_pr@2x.png",
-        "selectedIconPath": "images/tab/home_pr@2x.png"
+        "iconPath": "images/tab/home.png",
+        "selectedIconPath": "images/tab/home_pr.png"
       },
       {
         "pagePath": "pages/products/products",
         "text": "商城",
-        "iconPath": "images/tab/products_pr@2x.png",
-        "selectedIconPath": "images/tab/products_pr@2x.png"
+        "iconPath": "images/tab/products.png",
+        "selectedIconPath": "images/tab/products_pr.png"
       },
       {
         "pagePath": "pages/shoppingcar/shoppingcar",
         "text": "购物车",
-        "iconPath": "images/tab/shoppingcar_pr@2x.png",
-        "selectedIconPath": "images/tab/shoppingcar_pr@2x.png"
+        "iconPath": "images/tab/shoppingcar.png",
+        "selectedIconPath": "images/tab/shoppingcar_pr.png"
       },
       {
         "pagePath": "pages/mycenter/mycenter",
         "text": "我的",
-        "iconPath": "images/tab/mycenter_pr@2x.png",
-        "selectedIconPath": "images/tab/mycenter_pr@2x.png"
+        "iconPath": "images/tab/mycenter.png",
+        "selectedIconPath": "images/tab/mycenter_pr.png"
       }
     ]
   }
