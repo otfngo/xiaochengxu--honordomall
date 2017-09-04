@@ -8,7 +8,9 @@ Page({
   data: {
     classifyWrapperShow: true,
     productsContainerShow: true,
-    searchPanelShow: false
+    searchPanelShow: false,
+    currentProductTitleIndex: 0,
+    isEmpty: true
   },
 
   /**
@@ -16,7 +18,13 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-      productList: productsData.productList
+      productList: productsData.productList,
+      productTitleList: [
+        { name: '综合' },
+        { name: '销量' },
+        { name: '新品' },
+        { name: '价格' }
+      ]
     })
   },
 
@@ -40,6 +48,28 @@ Page({
       productsContainerShow: true,
       searchPanelShow: false
     })
+  },
+
+  onProductTitleTap: function (event) {
+    this.setData({
+      currentProductTitleIndex: event.target.dataset.index
+    })
+  },
+
+  processProductData: function () {
+    let products = []
+    if (!this.data.isEmpty) {
+      products = this.data.productList.concat(productsData.productList)
+    } else {
+      products = productsData.productList
+    }
+    
+    this.setData({
+      productList: products,
+      isEmpty: false
+    })
+    wx.hideNavigationBarLoading()
+    wx.stopPullDownRefresh()
   },
 
   /**
@@ -74,14 +104,19 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+    this.setData({
+      isEmpty: true
+    })
+    wx.showNavigationBarLoading()
+    setTimeout(this.processProductData, 1000)
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
+    wx.showNavigationBarLoading()
+    setTimeout(this.processProductData, 1000)
   },
 
   /**

@@ -1,3 +1,4 @@
 {
-  "navigationBarTitleText": "所有商品"
+  "navigationBarTitleText": "所有商品",
+  "enablePullDownRefresh": true
 }

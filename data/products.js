@@ -78,22 +78,6 @@ const productList = [
     activityPrice: 8000,
     favorQuantity: 251,
     saleQuantity: 288
-  },
-  {
-    imageSrc: '/images/home/image_product_homepage.png',
-    name: '荣和共兴-云ERP系统，进销存系统，企业、网店均适用',
-    marketPrice: 9800,
-    activityPrice: 8000,
-    favorQuantity: 251,
-    saleQuantity: 288
-  },
-  {
-    imageSrc: '/images/home/image_product_homepage.png',
-    name: '荣和共兴-云ERP系统，进销存系统，企业、网店均适用',
-    marketPrice: 9800,
-    activityPrice: 8000,
-    favorQuantity: 251,
-    saleQuantity: 288
   }
 ]
 

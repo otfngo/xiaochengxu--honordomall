@@ -15,8 +15,10 @@
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
+    "color": "#3f3f3f",
+    "selectedColor": "#1771f9",
+    "backgroundColor": "#ffffff",
     "borderStyle": "white",
-    "position": "bottom",
     "list": [
       {
         "pagePath": "pages/home/home",
@@ -38,7 +40,7 @@
       },
       {
         "pagePath": "pages/mycenter/mycenter",
-        "text": "个人中心",
+        "text": "我的",
         "iconPath": "images/tab/mycenter_pr@2x.png",
         "selectedIconPath": "images/tab/mycenter_pr@2x.png"
       }
